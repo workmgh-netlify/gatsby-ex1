@@ -77,7 +77,7 @@ const Occurrences = (props) => (
             <meta name="description" content="Landing Page" />
         </Helmet>
         <div id="main" className="occurrenceBrowser" style={style}>
-            <OccurrenceBrowser endpoint="http://es1.gbif-dev.org:9200/occurrence_v1" config={{fieldConfig: fieldConfig}}/>
+            <OccurrenceBrowser endpoint="//es1.gbif-dev.org:9200/occurrence_v1" config={{fieldConfig: fieldConfig}}/>
         </div>
     </Layout>
 )
