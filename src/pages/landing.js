@@ -11,8 +11,8 @@ import pic10 from '../assets/images/pic10.jpg'
 const Landing = props => {
   const spotLights = props.data.allMarkdownRemark.edges.map(function(e) {
     return (
-      <section>
-        <Link to={e.node.frontmatter.path} className="image">
+      <section key={e.node.fields.slug}>
+        <Link to={e.node.fields.slug} className="image">
           <img src={'//api.gbif.org/v1/image/unsafe/576x515/' + e.node.frontmatter.imageUrl} alt="" />
         </Link>
         <div className="content">
@@ -25,7 +25,7 @@ const Landing = props => {
             </p>
             <ul className="actions">
               <li>
-                <Link to={e.node.frontmatter.path} className="button">
+                <Link to={e.node.fields.slug} className="button">
                   Learn more
                 </Link>
               </li>
@@ -147,7 +147,10 @@ export default Landing
 export const query = graphql`
   query {
     allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "feature" } } }
+        filter: { 
+          frontmatter: { type: { eq: "feature" } } 
+          fields: {langKey: {eq: "en"}}
+        }
         sort: { order: DESC, fields: [frontmatter___date] }
         ) {
       totalCount
@@ -157,8 +160,10 @@ export const query = graphql`
           frontmatter {
             title
             date
-            path
             imageUrl
+          }
+          fields {
+            slug
           }
           excerpt
         }

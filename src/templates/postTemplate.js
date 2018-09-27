@@ -6,12 +6,15 @@ import Layout from '../components/layout'
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
+  const { markdownRemark } = data; // data.markdownRemark holds our post data
+  if (!markdownRemark) {
+    return <h1>404 - no data</h1>;
+  }
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
         <Helmet>
-            <title>Generic - Forty by HTML5 UP</title>
+            <title>{frontmatter.title}</title>
             <meta name="description" content="Generic Page" />
         </Helmet>
         <div id="main" className="alt">
@@ -33,11 +36,10 @@ export default function Template({
 
 export const pageQuery = graphql`
   query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(fields: { slug: { eq: $path } }) {
       html
       frontmatter {
         date
-        path
         title
         imageUrl
       }

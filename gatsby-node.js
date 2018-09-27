@@ -24,6 +24,10 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               path
             }
+            fields {
+              langKey
+              slug
+            }
           }
         }
       }
@@ -35,7 +39,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: node.frontmatter.path,
+        path: node.fields.slug,
         component: postTemplate,
         context: {}, // additional data can be passed via context
       })

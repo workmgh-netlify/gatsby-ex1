@@ -20,7 +20,7 @@ class HomeIndex extends React.Component {
             <h3>{e.node.frontmatter.title}</h3>
             <p>{e.node.excerpt}</p>
           </header>
-          <Link to={e.node.frontmatter.path} className="link primary" />
+          <Link to={e.node.fields.slug} className="link primary" />
         </article>
       )
     })
@@ -116,7 +116,10 @@ export default HomeIndex
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "intro"}}}) {
+    allMarkdownRemark(filter: {
+      fields: {langKey: {eq: "en"}}
+      frontmatter: {type: {eq: "intro"}}
+    }) {
       totalCount
       edges {
         node {
@@ -124,8 +127,11 @@ export const query = graphql`
           frontmatter {
             title
             date
-            path
             imageUrl
+          }
+          fields {
+            slug
+            langKey
           }
           excerpt
         }
