@@ -1,8 +1,13 @@
 ---
+isFallback: false
 title: "Sovende frø osv."
 date: 2018/08/10
 type: feature
-imageUrl: "http:%2F%2Fimages.ctfassets.net%2Fuo17ejk9rkwj%2FdwkUnxYcrmw8S24cUkWwg%2Feb6abfa78a78c08e49d14e040ac7e39f%2FMontigena_novae-zelandiae.jpg"
+collection:
+- feature
+- intro
+template: article
+imageUrl: "http://images.ctfassets.net/uo17ejk9rkwj/dwkUnxYcrmw8S24cUkWwg/eb6abfa78a78c08e49d14e040ac7e39f/Montigena_novae-zelandiae.jpg"
 ---
 In climates with unpredictable seasonal patterns, the ability of seeds to remain dormant provides ecological advantages by restricting germination to favorable growth periods. With aseasonal climates, however, this trait may be maladaptive.
 

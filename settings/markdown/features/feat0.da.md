@@ -1,7 +1,7 @@
 ---
-isFallback: false
-title: "Seed dormancy depends on seed size and seasonality"
+title: "Sovende frø osv."
 date: 2018/08/10
+type: feature
 collection:
 - feature
 - intro

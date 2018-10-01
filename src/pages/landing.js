@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
@@ -148,7 +148,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
         filter: { 
-          frontmatter: { type: { eq: "feature" } } 
+          frontmatter: { collection: { eq: "feature" } } 
           fields: {langKey: {eq: "en"}}
         }
         sort: { order: DESC, fields: [frontmatter___date] }

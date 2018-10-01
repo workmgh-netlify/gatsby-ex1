@@ -1,5 +1,5 @@
 ---
-isFallback: false
+isFallback: true
 title: "Seed dormancy depends on seed size and seasonality"
 date: 2018/08/10
 collection:

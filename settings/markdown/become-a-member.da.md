@@ -1,13 +1,12 @@
 ---
-isFallback: false
-title: Become a member
+title: Bliv medlem
 date: 2017/08/11
 type: intro
 collection:
 - feature
 - intro
 template: article
-path: "/become-a-member"
+path: "/nested/become-a-member"
 imageUrl: "http://images.ctfassets.net/uo17ejk9rkwj/3qQ3ZBTOZGCcy0W44oaMwe/a05406faf3d45c3f38ed77d653c02e79/Pronghorn_Antilocapra_americana.jpg"
 ---
 GBIF's national and organizational members—formally known as [Participants](/the-gbif-network)—represent governments and institutions from around the world. Our network also includes [hundreds of institutions that publish biodiversity data](/publisher/search) along with volunteers who participate in the growing number of [citizen science](/citizen-science) programmes around the world.

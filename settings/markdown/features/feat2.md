@@ -1,5 +1,4 @@
 ---
-isFallback: false
 title: "Distribution and diversity of amphibians in Albania"
 date: 2017/08/10
 type: feature

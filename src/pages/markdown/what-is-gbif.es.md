@@ -1,5 +1,5 @@
 ---
-isFallback: false
+isFallback: true
 title: What is GBIF?
 date: 2017/08/10
 type: intro

@@ -1,5 +1,4 @@
 ---
-isFallback: false
 title: "Protecting endemic palms of the Amazon"
 date: 2018/07/10
 type: feature

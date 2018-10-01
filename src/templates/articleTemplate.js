@@ -36,7 +36,10 @@ export default function Template({
 
 export const pageQuery = graphql`
   query($path: String!) {
-    markdownRemark(fields: { slug: { eq: $path } }) {
+    markdownRemark(
+      fields: { slug: { eq: $path } }
+      frontmatter: {template: {eq: "article"}}
+      ) {
       html
       frontmatter {
         date
