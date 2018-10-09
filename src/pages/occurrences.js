@@ -1,8 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import OccurrenceBrowser from 'react-occurrence-browser'
 import Layout from '../components/layout'
-
-import OccurrenceBrowser from 'react-occurrence-browser';
 
 const style = {
     height: 'calc(100vh - 62px)',
@@ -38,16 +37,22 @@ const fieldConfig = {
       ]
   };
 
-const Occurrences = (props) => (
-    <Layout hideFooter={true}>
-        <Helmet>
-            <title>Occurrence search</title>
-            <meta name="description" content="Landing Page" />
-        </Helmet>
-        <div id="main" className="occurrenceBrowser" style={style}>
-            <OccurrenceBrowser endpoint="//es1.gbif-dev.org/fungi" config={{mapStateToUrl: true, fieldConfig: fieldConfig}}/>
-        </div>
-    </Layout>
-)
+const Occurrences = (props) => {
+  if (typeof window !== 'undefined') {
+    return (
+      <Layout hideFooter={true}>
+          <Helmet>
+              <title>Occurrence search</title>
+              <meta name="description" content="Landing Page" />
+          </Helmet>
+          <div id="main" className="occurrenceBrowser" style={style}>
+              <OccurrenceBrowser endpoint="//es1.gbif-dev.org/fungi" config={{mapStateToUrl: true, fieldConfig: fieldConfig}}/>
+          </div>
+      </Layout>
+    );
+  } else {
+    return <div>Browse occurrences</div>
+  }
+};
 
 export default Occurrences
