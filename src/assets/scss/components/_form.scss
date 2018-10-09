@@ -60,7 +60,7 @@
 		}
 	}
 
-	label {
+	.label {
 		color: _palette(fg-bold);
 		display: block;
 		font-size: 0.8em;
@@ -203,6 +203,7 @@
 		}
 	}
 
+.ssg {
 	::-webkit-input-placeholder {
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
@@ -227,3 +228,4 @@
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
+}
