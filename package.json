@@ -20,7 +20,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
-    "react-occurrence-browser": "github:MortenHofft/react-occurrence-browser#7eaa6c268f4aac525ed7252c6af17bca99aac6c9"
+    "react-occurrence-browser": "github:MortenHofft/react-occurrence-browser#1a17af376aa8b7597f3059476bb4c0453a9eda91"
   },
   "keywords": [
     "gatsby"
