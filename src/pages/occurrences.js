@@ -46,7 +46,7 @@ const Occurrences = (props) => {
               <meta name="description" content="Landing Page" />
           </Helmet>
           <div id="main" className="occurrenceBrowser" style={style}>
-              <OccurrenceBrowser endpoint="//es1.gbif-dev.org/fungi" config={{mapStateToUrl: true, fieldConfig: fieldConfig}}/>
+              <OccurrenceBrowser endpoint="//es1.gbif-dev.org/svampeatlas" config={{mapStateToUrl: true, fieldConfig: fieldConfig}}/>
           </div>
       </Layout>
     );
