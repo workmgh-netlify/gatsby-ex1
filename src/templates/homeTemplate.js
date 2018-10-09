@@ -81,6 +81,7 @@ query($path: String!, $langKey: String!) {
       }
     },
     allMarkdownRemark(
+      sort: {fields: [frontmatter___date], order: DESC},
       filter: {
         fields: { langKey: { eq: $langKey } }
         frontmatter: { collection: { eq: "intro" } }

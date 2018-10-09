@@ -1,9 +1,8 @@
 ---
 title: What is GBIF?
-date: 2017/08/10
+date: 2018/06/10
 type: intro
 collection:
-- feature
 - intro
 template: article
 path: "/what-is-gbif"

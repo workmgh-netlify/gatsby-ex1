@@ -1,7 +1,7 @@
 ---
 isFallback: false
 title: "Sovende frø osv."
-date: 2018/08/10
+date: 2018/05/10
 type: feature
 collection:
 - feature
