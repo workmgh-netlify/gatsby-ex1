@@ -11,63 +11,31 @@ const style = {
 
 const fieldConfig = {
     fields: [
-      {
-        name: 'gbifScientificName',
-        width: 200
-      },
-      {
-        name: 'country',
-        width: 100
-      },
-      {
-        name: 'basisOfRecord',
-        width: 100
-      },
-      {
-        name: 'individualCount',
-        width: 200
-      },
-      {
-        name: 'year',
-        width: 100
-      },
-      {
-        name: 'continent',
-        width: 100
-      },
-      {
-        name: 'kingdom',
-        width: 100
-      },
-      {
-        name: 'phylum',
-        width: 100
-      },
-      {
-        name: 'class',
-        width: 100
-      },
-      {
-        name: 'order',
-        width: 100
-      },
-      {
-        name: 'family',
-        width: 100
-      },
-      {
-        name: 'genus',
-        width: 100
-      },
-      {
-        name: 'species',
-        width: 100
-      },
-      {
-        name: 'gbifID',
-        width: 100
-      },
-    ]
+        {
+          name: 'scientificName',
+          width: 200
+        },
+        {
+          name: 'datasetKey',
+          width: 100
+        },
+        {
+          name: 'countryCode',
+          width: 100
+        },
+        {
+          name: 'basisOfRecord',
+          width: 100
+        },
+        {
+          name: 'year',
+          width: 100
+        },
+        {
+          name: 'institutionCode',
+          width: 100
+        }
+      ]
   };
 
 const Occurrences = (props) => (
