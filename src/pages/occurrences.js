@@ -1,11 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
- 
-const style = {
-    height: 'calc(100vh - 62px)',
-    color: 'black!important'
-};
 
 const fieldConfig = {
     fields: [
@@ -45,8 +40,8 @@ const Occurrences = (props) => {
               <title>Occurrence search</title>
               <meta name="description" content="Landing Page" />
           </Helmet>
-          <div id="main" className="occurrenceBrowser" style={style}>
-              <OccurrenceBrowser endpoint="//es1.gbif-dev.org/svampeatlas" config={{mapStateToUrl: true, fieldConfig: fieldConfig}}/>
+          <div id="main" className="occurrenceBrowser">
+              <OccurrenceBrowser endpoint="//es1.gbif-dev.org/all_fungi" config={{mapStateToUrl: true, fieldConfig: fieldConfig}}/>
           </div>
       </Layout>
     );
