@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 const Menu = (props) => (
-    <nav id="menu">
+    <nav id="menu" className="ssgTheme">
         <div className="inner">
             <ul className="links">
                 <li><Link onClick={props.onToggleMenu} to="/">Home</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/occurrences">Occurrences</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/generic">About</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/about">About</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/landing">Features</Link></li>
             </ul>
             <ul className="languageSelector">

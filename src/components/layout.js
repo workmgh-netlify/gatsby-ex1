@@ -39,10 +39,14 @@ class Layout extends React.Component {
         const { children } = this.props
 
         return (
-            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
+            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''} ${this.props.disableDefaultStyle ? '' : 'ssgTheme'}`}>
                 <div id="wrapper">
-                    <Header onToggleMenu={this.handleToggleMenu} />
-                    {children}
+                    <div className="body ssgTheme">
+                        <Header onToggleMenu={this.handleToggleMenu} />
+                    </div>
+                    <div>
+                        {children}
+                    </div>
                     {!this.props.hideFooter && <Contact />}
                     {!this.props.hideFooter && <Footer />}
                 </div>

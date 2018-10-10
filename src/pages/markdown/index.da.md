@@ -1,6 +1,6 @@
 ---
 isFallback: false
-title: Grønmarks biodiversitet
+title: Tecalas biodiversitet
 date: 2017/08/10
 type: home
 template: home

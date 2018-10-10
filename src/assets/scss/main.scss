@@ -41,39 +41,31 @@
 		}
 	}
 
-// Base.
-
-	@import 'base/page';
-	@import 'base/typography';
-
-// Component.
-
-	@import 'components/section';
-	@import 'components/form';
-	@import 'components/box';
-	@import 'components/icon';
-	@import 'components/image';
-	@import 'components/list';
-	@import 'components/table';
-	@import 'components/button';
-	@import 'components/tiles';
-	@import 'components/contact-method';
-	@import 'components/spotlights';
-
-// Layout.
-
-	@import 'layout/header';
-	@import 'layout/banner';
-	@import 'layout/main';
-	@import 'layout/contact';
-	@import 'layout/footer';
-	@import 'layout/wrapper';
-	@import 'layout/menu';
-
-
-	.occurrenceBrowser input{
-		color: #2e3c43;
-	}
-	.occurrenceBrowser th{
-		color: #7f8588;
-	}
+	
+	// Base.
+		@import 'base/page';
+		@import 'base/typography';
+		
+		.ssgTheme {
+			// Component.
+			@import 'components/section';
+			@import 'components/form';
+			@import 'components/box';
+			@import 'components/icon';
+			@import 'components/image';
+			@import 'components/list';
+			@import 'components/table';
+			@import 'components/button';
+			@import 'components/tiles';
+			@import 'components/contact-method';
+			@import 'components/spotlights';
+		}
+	
+	// Layout.
+		@import 'layout/header';
+		@import 'layout/banner';
+		@import 'layout/main';
+		@import 'layout/contact';
+		@import 'layout/footer';
+		@import 'layout/wrapper';
+		@import 'layout/menu';

@@ -1,8 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import OccurrenceBrowser from 'react-occurrence-browser'
 import Layout from '../components/layout'
-
+ 
 const style = {
     height: 'calc(100vh - 62px)',
     color: 'black!important'
@@ -39,8 +38,9 @@ const fieldConfig = {
 
 const Occurrences = (props) => {
   if (typeof window !== 'undefined') {
+    let OccurrenceBrowser = window.OccurrenceBrowser;
     return (
-      <Layout hideFooter={true}>
+      <Layout hideFooter={true} disableDefaultStyle={true}>
           <Helmet>
               <title>Occurrence search</title>
               <meta name="description" content="Landing Page" />

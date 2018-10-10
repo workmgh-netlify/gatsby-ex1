@@ -15,7 +15,7 @@ const targetFolder = 'src/pages/markdown';
 const languages = siteSettings.languages;
 const defaultLanguage = siteSettings.defaultLanguage;
 
-gulp.task('generateLanguages', ['fallbackLanguage'], function () {
+gulp.task('create', ['fallbackLanguage'], function () {
   // copy files that do have a language code in the filename (overwriting existing files if any) and mark as fallback=false
   return gulp.src([`${rootFolder}/**/*.*.md`])
     .pipe(replace(anchor, replaceAnchor + 'isFallback: false\n'))
