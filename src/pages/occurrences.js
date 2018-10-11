@@ -39,6 +39,7 @@ const Occurrences = (props) => {
           <Helmet>
               <title>Occurrence search</title>
               <meta name="description" content="Landing Page" />
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.49.0/mapbox-gl.css"></script>
           </Helmet>
           <div id="main" className="occurrenceBrowser">
               <OccurrenceBrowser endpoint="//es1.gbif-dev.org/all_fungi" config={{mapStateToUrl: true, fieldConfig: fieldConfig}}/>
