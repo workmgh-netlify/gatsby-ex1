@@ -71,16 +71,16 @@
 		@import 'layout/menu';
 
 .occurrenceBrowser {
-	height: calc(100vh - 74px);
+	height: calc(100vh - 76px);
 	@include breakpoint(xlarge) {
-		height: calc(100vh - 62px);
+		height: calc(100vh - 64px);
 	}
 
 	@include breakpoint(large) {
-		height: calc(100vh - 44px);
+		height: calc(100vh - 46px);
 	}
 
 	@include breakpoint(xxsmall) {
-		height: calc(100vh - 41px);
+		height: calc(100vh - 43px);
 	}
 }
