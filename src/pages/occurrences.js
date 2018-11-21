@@ -2,34 +2,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-const fieldConfig = {
-    fields: [
-        {
-          name: 'scientificName',
-          width: 200
-        },
-        {
-          name: 'datasetKey',
-          width: 100
-        },
-        {
-          name: 'countryCode',
-          width: 100
-        },
-        {
-          name: 'basisOfRecord',
-          width: 100
-        },
-        {
-          name: 'year',
-          width: 100
-        },
-        {
-          name: 'institutionCode',
-          width: 100
-        }
-      ]
-  };
+const config = {
+  occurrenceEndpoint: '//es1.gbif-dev.org/some_fungi',
+  mapStateToUrl: true
+};
 
 const Occurrences = (props) => {
   if (typeof window !== 'undefined') {
@@ -42,7 +18,7 @@ const Occurrences = (props) => {
               <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.49.0/mapbox-gl.css"></link>
           </Helmet>
           <div id="main" className="occurrenceBrowser">
-              <OccurrenceBrowser endpoint="//es1.gbif-dev.org/all_fungi" config={{mapStateToUrl: true, fieldConfig: fieldConfig}}/>
+            <OccurrenceBrowser config={config}/>
           </div>
       </Layout>
     );
